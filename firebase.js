@@ -3,7 +3,6 @@ import { initializeApp } from "firebase/app";
 import { initializeAuth, getReactNativePersistence } from "firebase/auth";
 import { getDatabase } from "firebase/database";
 import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage';
-// https://firebase.google.com/docs/web/setup#available-libraries
 
 
 const firebaseConfig = {
@@ -16,11 +15,7 @@ const firebaseConfig = {
   measurementId: "G-ZTCV3GJ8H1",
   databaseURL: "https://shopez-18a05-default-rtdb.firebaseio.com"
 };
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// Initialize Auth with React Native persistence (AsyncStorage) so the user's
-// login persists across app restarts.
 export const auth = initializeAuth(app, {
   persistence: getReactNativePersistence(ReactNativeAsyncStorage),
 });

@@ -9,11 +9,9 @@ export default function ProductDetail({ route, navigation }) {
   const handleAdd = async () => {
     try {
       await addToCart(product, 1);
-      // Show confirmation and open cart so the user sees the added item
       alert('Added to cart');
       navigation.navigate('Cart');
     } catch (e) {
-      // If the error is due to authentication, send user to Login screen
       if (e && e.message && e.message.toLowerCase().includes('not authenticated')) {
         alert('Please login to add items to your cart');
         navigation.navigate('Login');

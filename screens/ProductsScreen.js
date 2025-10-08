@@ -80,7 +80,7 @@ export default function ProductsScreen({ navigation }) {
             </TouchableOpacity>
           ))}
         </ScrollView>
-        {/* debug panel removed */}
+        
       </View>
       <FlatList
         data={products}

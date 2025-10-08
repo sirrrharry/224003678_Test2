@@ -16,8 +16,7 @@ export default function LoginScreen({ navigation }) {
       setError('Email and password are required');
       return false;
     }
-    // simple email regex
-    const re = /\S+@\S+\.\S+/;
+  const re = /\S+@\S+\.\S+/;
     if (!re.test(email)) {
       setError('Enter a valid email');
       return false;
