@@ -1,0 +1,8 @@
+You need to install these additional dependencies:
+
+npm install firebase @react-navigation/native @react-navigation/native-stack @react-navigation/bottom-tabs @react-native-async-storage/async-storage
+
+Then run:
+
+expo install react-native-screens react-native-safe-area-context
+
