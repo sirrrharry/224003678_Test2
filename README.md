@@ -1,4 +1,4 @@
-# ShopEZ (Expo)
+np# ShopEZ (Expo)
 
 This is a React Native (Expo) sample app that demonstrates:
 - Firebase Email/Password authentication
